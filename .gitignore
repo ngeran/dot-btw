@@ -1,0 +1,38 @@
+# ==========================================
+# 1. THE "IGNORE ALL" RULE
+# ==========================================
+# We start by ignoring every single file and folder in the Home directory.
+/*
+.*
+
+# ==========================================
+# 2. THE "WHITELIST" (Do NOT ignore these)
+# ==========================================
+# We want Git to actually track the .gitignore file itself and our shell configs.
+!/.gitignore
+!/.zshrc
+!/.bashrc
+!/.vimrc
+
+# If you have a folder like .config/nvim, you must un-ignore the folder AND the contents
+!/.config/
+!/.config/**
+
+# ==========================================
+# 3. AI & JUNK PROTECTIONS
+# ==========================================
+# Even if we accidentally try to add these later, Git will block them.
+CLAUDE.md
+.cursorrules
+.aichat/
+chatgpt-history.json
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# 4. NESTED REPO PROTECTION
+# ==========================================
+# Prevent your dotfiles repo from ever trying to track other git projects.
+.git/
+**/.git/
+**/node_modules/
