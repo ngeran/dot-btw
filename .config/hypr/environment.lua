@@ -79,8 +79,8 @@ hl.on("hyprland.start", function()
   -- 9. Polkit Agent
   hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &")
 
-  -- 10. Start Hypridle LAST
-  hl.exec_cmd("sleep 2 && hypridle &")
+  -- 10. Start Hypridle LAST (logs → $HOME/.local/state/hypr/hypridle.log)
+  hl.exec_cmd("sleep 2 && mkdir -p $HOME/.local/state/hypr && hypridle >> $HOME/.local/state/hypr/hypridle.log 2>&1 &")
 
   -- ControlWindow removed — consolidated into settings
 end)

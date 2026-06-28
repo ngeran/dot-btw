@@ -36,7 +36,7 @@ hl.config({
   decoration = {
     rounding         = 0,    -- sharp corners: zero anti-aliasing glow
     rounding_power   = 2,
-    active_opacity   = 0.92, -- pull peak luminance off static windows
+    active_opacity   = 1,    -- pull peak luminance off static windows
     inactive_opacity = 0.75, -- stronger dim on unfocused content
     dim_inactive     = true, -- compositor-level dim (stacks with opacity)
     dim_strength     = 0.15, -- 15% additional dim on inactive windows

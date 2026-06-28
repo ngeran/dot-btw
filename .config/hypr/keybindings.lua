@@ -47,7 +47,7 @@ hl.bind(mod .. " + A",
 -- --- Session Management ------------------------------------------------------
 hl.bind(mod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mod .. " + M",
-  hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit"))
+  hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 
 -- --- Window Management & Tiling -----------------------------------------------
 hl.bind(mod .. " + V", hl.dsp.window.float({ action = "toggle" }))

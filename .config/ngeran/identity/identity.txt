@@ -1,0 +1,6 @@
+name=NIKOS
+role=NETWORK ENGINEER
+host=obsidian
+status=CORE ACTIVE
+shell=ZSH
+wm=HYPRLAND
