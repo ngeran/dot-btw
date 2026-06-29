@@ -25,7 +25,7 @@ hl.env("CLUTTER_BACKEND", "wayland")
 hl.env("SDL_VIDEODRIVER", "wayland")
 
 -- Explicitly forces Mesa to use the ultra-fast ACO shader compiler for your AMD GPU
-hl.env("AMD_DEBUG", "use_aco")
+-- hl.env("AMD_DEBUG", "use_aco")
 
 -- Web renderer hardware acceleration fallback overrides
 hl.env("MOZ_ENABLE_WAYLAND", "1")
@@ -36,7 +36,7 @@ hl.env("MOZ_ENABLE_WAYLAND", "1")
 hl.env("QT_QPA_PLATFORM", "wayland;xcb")
 hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION", "1")
 hl.env("QT_QPA_PLATFORMTHEME", "qt5ct")
-hl.env("QT_STYLE_OVERRIDE", "Fusion")
+-- hl.env("QT_STYLE_OVERRIDE", "Fusion")
 
 -- ── Dark Mode Enforcement ─────────────────────────────────────────────────────
 -- GTK: force dark variant globally via portal color-scheme preference
